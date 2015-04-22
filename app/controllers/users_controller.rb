@@ -6,7 +6,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    if params[:id] == "login"
+      @user = current_user
+    else
+      @user = User.find(params[:id])
+    end
     unless @user == current_user
       redirect_to :back, :alert => "Access denied."
     end
