@@ -7,6 +7,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'paperclip', '~> 4.2'     # For adding files to media
+gem 'awesome_print'           # For debuging purposes
+gem 'friendly_id', '~> 5.1.0' # For nice urls
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
